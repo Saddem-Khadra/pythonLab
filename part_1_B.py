@@ -32,7 +32,7 @@ class Fruit:
 if __name__ == '__main__':
     colorama.init(autoreset=True)
     my_list = []
-    rows = read_csv_file("produce.csv")
+    rows = read_csv_file("files/produce.csv")
     for row in rows:
         row = row[0].split()
         fruit_name = row.pop(0)
@@ -43,7 +43,7 @@ if __name__ == '__main__':
         print(fruit.__str__())
     if not os.path.exists("produce.out"):
         write_csv_file("produce.out", data=my_list)
-    rows = read_csv_file("produce.csv")
+    rows = read_csv_file("files/produce.csv")
     for row in rows:
         row = row[0].split()
         fruit_name = row.pop(0)

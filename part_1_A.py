@@ -23,7 +23,7 @@ class Student:
         return all(isinstance(i, (int, float)) for i in my_list)
 
     def add_student_to_file(self):
-        file = open("studentdata.txt", "a")
+        file = open("files/studentdata.txt", "a")
         file.write(f"{self._name} {' '.join(str(item) for item in self._exam_scores)}" + "\n")
         file.close()
 

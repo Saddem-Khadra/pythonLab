@@ -76,7 +76,7 @@ def add_to_file(Student):
 
 
 def show_top_students(Student):
-    lines = read_file("studentdata.txt")
+    lines = read_file("files/studentdata.txt")
     print(Fore.LIGHTCYAN_EX + "The students that have more than six exam scores :")
     for line in lines:
         line = line.split()
@@ -86,7 +86,7 @@ def show_top_students(Student):
 
 
 def show_details_of_students(Student):
-    lines = read_file("studentdata.txt")
+    lines = read_file("files/studentdata.txt")
     print(lines)
     print(Fore.LIGHTCYAN_EX + "List of details of each student : ")
     for line in lines:

@@ -8,7 +8,7 @@ from utils import read_file
 if __name__ == '__main__':
     letters = list(string.ascii_lowercase)
     colorama.init(autoreset=True)
-    lines = read_file('exemple.txt')
+    lines = read_file('files/exemple.txt')
     for letter in letters:
         count = 0
         for line in lines:
