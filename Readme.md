@@ -17,7 +17,7 @@ linux : source venv/bin/activate
 
 ### Install Requirements:
 
-pip install -r /path/to/requirements.txt
+pip install -r requirements.txt
 
 ### Run python file:
 python file_name.py 
